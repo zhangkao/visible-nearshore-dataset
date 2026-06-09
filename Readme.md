@@ -16,3 +16,6 @@ Fig. 1. Examples of case presentation from our dataset. Four distinct weather an
 
 # Experiments
 We conduct comprehensive evaluations on ten representative object detection methods, including Faster R-CNN, YOLOv10, YOLOv12, YOLOv13, RT-DETR, RT-DETRv2, RT-DETRv3, OWRT-DETR, D-FINE, DEIM (baseline) and VN-DETR(ours). For a fair comparison, all competing methods are trained using the official implementations and the default training configurations provided by their authors.
+
+# Acknowledgments
+This research was funded by the National Natural Science Foundation of China (Grant No. 62201404) and The Startup Foundation for Introducing Talent of NUIST (Grant No. 2024r061).
