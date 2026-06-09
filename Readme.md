@@ -17,5 +17,8 @@ Fig. 1. Examples of case presentation from our dataset. Four distinct weather an
 # Experiments
 We conduct comprehensive evaluations on ten representative object detection methods, including Faster R-CNN, YOLOv10, YOLOv12, YOLOv13, RT-DETR, RT-DETRv2, RT-DETRv3, OWRT-DETR, D-FINE, DEIM (baseline) and VN-DETR(ours). For a fair comparison, all competing methods are trained using the official implementations and the default training configurations provided by their authors.
 
+Comparison of different detection methods on the test set of the proposed dataset. Ped., Sail., Swim., Flot., and Seam. denote Pedestrian, Sailor, Swimmer, Flotage, and Seamark, respectively. Per-class results are reported using AP50, while overall performance is evaluated by both mAP50 and mAP50:95. The best results are highlighted in bold, and the second-best results are marked in blue.
+![Network Architecture case presentation from our dataset](images/result.png)
+
 # Acknowledgments
 This research was funded by the National Natural Science Foundation of China (Grant No. 62201404) and The Startup Foundation for Introducing Talent of NUIST (Grant No. 2024r061).
