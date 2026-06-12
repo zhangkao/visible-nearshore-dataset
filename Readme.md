@@ -22,3 +22,15 @@ Comparison of different detection methods on the test set of the proposed datase
 
 # Acknowledgments
 This research was funded by the National Natural Science Foundation of China (Grant No. 62201404) and The Startup Foundation for Introducing Talent of NUIST (Grant No. 2024r061).
+
+
+# Contact
+Zhibin LIU
+Perceptual and Generative AI Lab (PGAI Lab)
+Nanjing University of Information Science and Technology, Nanjing, China.
+Email: liuzhibin@nuist.edu.cn
+
+Kao ZHANG
+Perceptual and Generative AI Lab (PGAI Lab)
+Nanjing University of Information Science and Technology, Nanjing, China.
+Email: kaozhang@nuist.edu.cn
