@@ -1,23 +1,60 @@
 The dataset and code will be available soon.
 
 # PGAI_VND
-Visible Nearshore Object Detection: Dataset and Benchmark
-
-# Abstract
-Visible nearshore object detection plays a crucial role in intelligent surveillance, navigation safety, and water rescue. However, this task remains highly challenging due to factors such as small object sizes, interference from waves and complex background textures, as well as significant illumination variations. In addition, most existing studies primarily focus on ship detection, lacking comprehensive datasets that cover diverse nearshore object categories. To address these challenges, this paper presents a visible nearshore image dataset designed for nearshore environments. The dataset contains 20,934 images and is annotated with seven categories, including Pedestrian, Sailor, Swimmer, Ship, Boat, Flotage, and Seamark. Based on this dataset, we evaluate multiple mainstream object detection methods, providing essential data support and benchmark for the development and comparison of detection algorithms in nearshore scenarios. Furthermore, we propose a visible nearshore object detection network named VN-DETR, with improvements in both feature extraction and feature fusion. Experimental results demonstrate the superiority and effectiveness of the proposed method on the constructed dataset.
+Visible Nearshore Object Detection in Overhead Coastal Surveillance Imagery: A Large-Scale Dataset and Benchmark
 
 # Dataset
-The dataset was collected using visible cameras along the nearshore regions of Fujian Province, China, spanning the period from August 2024 to September 2025. To ensure data quality and reduce redundancy, multiple rounds of rigorous screening were conducted to exclude images with significant overlapping or low information content. Ultimately, a visible nearshore object detection dataset comprising 20,934 images was constructed for subsequent analysis.
 
-The visible images collected in this paper cover a wide range of real nearshore human activities, including swimming, boating, and fishing, thereby closely reflecting practical application scenarios. To enhance the diversity and challenge level of the dataset, we collect nearshore images in different weather and lighting conditions, mainly sunny, foggy, morning and evening. Representative scenarios and the typical data collected in this dataset can be summarized as follows: (1) Visible nearshore images collected under various weather conditions. Adverse environments such as sea fog and rainy weather severely degrade the imaging characteristics of objects in visible images by reducing image clarity and contrast. This often leads to darker image tones and the loss of fine-grained details, causing objects to appear blurred or even invisible. (2) Visible nearshore images captured under different illumination conditions. Even within the same region, variations in illumination conditions can lead to significant changes in brightness, contrast, and color distribution. For example, under strong illumination, intense sea-surface reflections may cause local overexposure that obscures object details. In contrast, under low-light or backlighting conditions, the overall image brightness decreases, resulting in blurred object boundaries and weakened feature representation. (3) Visible nearshore images captured from different viewing perspectives. Visible nearshore images acquired using cameras with different focal lengths contain objects of varying scales and imaging angles. Long-focus lenses can capture objects at long distances, allowing them to occupy a larger proportion of the image, although with a narrower field of view. In contrast, short-focus lenses provide a wider scene coverage, but the object size becomes relatively smaller.
+## Dataset Overview
+
+Visible Nearshore Dataset is a large-scale object detection benchmark designed for real-world nearshore monitoring scenarios. It contains **20,934 visible-light images** and **58,482 annotated instances**, covering seven fine-grained categories: **Pedestrian, Sailor, Swimmer, Ship, Boat, Flotage, and Seamark**.
+
+Unlike existing maritime datasets that mainly focus on vessels, this dataset jointly models **human activities, vessels, floating objects, and navigation marks** in complex coastal environments, providing a more comprehensive benchmark for visible nearshore object detection.
+
+### Key Features
+
+- **Large-scale nearshore data**  
+  The dataset contains 20,934 images collected from real nearshore regions, with 58,482 bounding-box annotations.
+
+- **Seven fine-grained categories**  
+  The dataset covers pedestrians on coastal land, sailors on vessels, swimmers in water, ships, boats, floating objects, and seamarks.
+
+- **Real-world coastal scenes**  
+  Images include ocean areas, beaches, rocky shores, islands, and ports, reflecting practical surveillance and rescue scenarios.
+
+- **Diverse weather and illumination conditions**  
+  The dataset includes sunny, foggy, morning, evening, low-light, backlit, and reflection-affected scenes.
+
+- **Wide resolution range**  
+  Image resolutions vary from **640 x 370** to **2560 x 1440**, covering low-, medium-, high-, and very-high-resolution samples.
+
+- **Strong small-object challenge**  
+  Many objects appear at long distances or are partially submerged/occluded, especially swimmers, sailors, pedestrians, flotage, and seamarks.
+
+- **Complex background interference**  
+  Waves, sea-surface reflections, shoreline textures, haze, and low contrast introduce substantial false-detection and missed-detection challenges.
+
+- **Benchmark-ready split**  
+  The dataset is divided into training, validation, and test sets with approximately **7:2:1**, while maintaining category distribution across subsets.
+
+
+Table 1. Distribution of image resolutions in the proposed dataset. 
+![table2](images/table2.png)
+
+
+Table 2. Temporal distribution of images in the proposed dataset. 
+![table3](images/table3.png)
+
+
+Table 3. The size distribution of each object category. 
+![table4](images/table4.png)
 
 ![Examples of case presentation from our dataset](images/Examples.png)
-Fig. 1. Examples of case presentation from our dataset. Four distinct weather and lighting conditions, specifically: (a) sunny, (b) foggy, (c) morning, and (d) evening. The depicted scene is mainly located in nearshore areas, including the ocean, beaches, rocky shores, islands and ports.
+Fig. 1. Examples of case presentation from our dataset. 
 
 # Experiments
-We conduct comprehensive evaluations on ten representative object detection methods, including Faster R-CNN, YOLOv10, YOLOv12, YOLOv13, RT-DETR, RT-DETRv2, RT-DETRv3, OWRT-DETR, D-FINE, DEIM (baseline) and VN-DETR(ours). For a fair comparison, all competing methods are trained using the official implementations and the default training configurations provided by their authors.
 
-Comparison of different detection methods on the test set of the proposed dataset. Ped., Sail., Swim., Flot., and Seam. denote Pedestrian, Sailor, Swimmer, Flotage, and Seamark, respectively. Per-class results are reported using AP50, while overall performance is evaluated by both mAP50 and mAP50:95. The best results are highlighted in bold, and the second-best results are marked in blue.
+Table 4. Comparison of different detection methods on the test set of the proposed dataset.
 ![Comparison of different detection methods](images/result.png)
 
 # Acknowledgments
@@ -25,12 +62,12 @@ This research was funded by the National Natural Science Foundation of China (Gr
 
 
 # Contact
-Zhibin LIU
-Perceptual and Generative AI Lab (PGAI Lab)
-Nanjing University of Information Science and Technology, Nanjing, China.
-Email: liuzhibin@nuist.edu.cn
+Zhibin LIU <br />
+Perceptual and Generative AI Lab (PGAI Lab) <br />
+Nanjing University of Information Science and Technology <br />
+Email: liuzhibin@nuist.edu.cn <br />
 
-Kao ZHANG
-Perceptual and Generative AI Lab (PGAI Lab)
-Nanjing University of Information Science and Technology, Nanjing, China.
-Email: kaozhang@nuist.edu.cn
+Kao ZHANG<br />
+Perceptual and Generative AI Lab (PGAI Lab) <br />
+Nanjing University of Information Science and Technology <br />
+Email: kaozhang@nuist.edu.cn <br />
