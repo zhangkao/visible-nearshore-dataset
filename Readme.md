@@ -7,7 +7,7 @@ Visible Nearshore Object Detection in Overhead Coastal Surveillance Imagery: A L
 
 ## Dataset Overview
 
-Visible Nearshore Dataset is a large-scale object detection benchmark designed for real-world nearshore monitoring scenarios. It contains **20,934 visible-light images** and **58,482 annotated instances**, covering seven fine-grained categories: **Pedestrian, Sailor, Swimmer, Ship, Boat, Flotage, and Seamark**.
+Visible Nearshore Dataset is a large-scale object detection benchmark designed for real-world nearshore monitoring scenarios. It contains **20,934 images** and **58,482 annotated instances**, covering seven fine-grained categories: **Pedestrian, Sailor, Swimmer, Ship, Boat, Flotage, and Seamark**.
 
 Unlike existing maritime datasets that mainly focus on vessels, this dataset jointly models **human activities, vessels, floating objects, and navigation marks** in complex coastal environments, providing a more comprehensive benchmark for visible nearshore object detection.
 
