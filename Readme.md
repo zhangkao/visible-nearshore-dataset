@@ -22,6 +22,11 @@ Unlike existing maritime datasets that mainly focus on vessels, this dataset joi
 - **Real-world coastal scenes**  
   Images include ocean areas, beaches, rocky shores, islands, and ports, reflecting practical surveillance and rescue scenarios.
 
+- **Overhead-view surveillance perspective**  
+  The dataset is built from fixed coastal monitoring images captured from an elevated overlooking perspective. This view is representative of real nearshore surveillance systems and introduces distinctive scale changes, partial occlusion, and dense object layouts.
+
+- **Year-round seasonal coverage**  
+  The dataset spans approximately one full year, covering all four seasons. This long-term collection captures seasonal variations in coastal appearance, human activity patterns, weather, illumination, and sea-surface conditions.
 - **Diverse weather and illumination conditions**  
   The dataset includes sunny, foggy, morning, evening, low-light, backlit, and reflection-affected scenes.
 
